@@ -6,7 +6,7 @@ function App() {
 
   const [items, setItems] = useState([])
 
-  const title = 'Things to do'
+  const title = 'Things to do';
 
   const addNewItem = (text) => {
     setItems( items => {
@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="container">
       <div className="row">
-      <TodoList items={items} title={title} addNewItem={addNewItem} />
+        <TodoList items={items} title={title} addNewItem={addNewItem} />
       </div>
     </div>
   );
